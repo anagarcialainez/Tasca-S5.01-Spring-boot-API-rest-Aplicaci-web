@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Sucursal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <!-- Agrega más enlaces a tus estilos si es necesario -->
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Detalles de la Sucursal</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <p>ID: <span th:text="${sucursal.pk_SucursalID}"></span></p>
+            <p>Nombre: <span th:text="${sucursal.nomSucursal}"></span></p>
+            <p>País: <span th:text="${sucursal.paisSucursal}"></span></p>
+            <!-- Agrega más detalles según tus necesidades -->
+        </div>
+    </div>
+
+    <a th:href="@{'/sucursales'}" class="btn btn-primary mt-3">Volver a la Lista</a>
+</div>
+
+<!-- scripts de Bootstrap y otros scripts necesarios aquí -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-4sbgOc/Z9HRofGBAO1FSp+Qvxh2wnQ5dqFiqMfckFCEyEaCCAl8F7U7K0eg6tYqo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
